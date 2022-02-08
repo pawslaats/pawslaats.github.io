@@ -1,22 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <title>Paul Slaats</title>
-  <link rel="stylesheet" href="./style.css">
-  <script src="https://unpkg.com/typeit@8.0.7/dist/index.umd.js"></script>
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="resources/images/wave.png">
 </head>
 <body>
-  <header>
-    <div class="content">
-      <nav class="nav">
-        <ul>
-          <li>About Me</li>
-          <li>Projects</li>
-          <li>Follow</li>
-          <li>Test</li>
-        </ul>
-      </nav>
+<!---Navigation--->
+<header>
+  <div class="content">
+  <div class="logo"><span style="color:#050c26">Slaats</span> : <span style="color:#4039a8">Dev</span></div>
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#links">Links</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  </div>
+</header>
+<!---Hero--->
+<div class="hero-main">
+  <div class="hero-left">
+    <img class="photo main" src="resources/images/headshot.png">
+  </div>
+  <div class="hero-right">
+    <div class="hero-right-title">👋 Hello There!</div>
+    <div class="hero-right-content">My name is Paul Slaats, and I am a developer, product manager, and lifelong learner.  
+      My north star is creating value for people who invest their time, skills, and resources to improve their life and the lives of others.</div>
+    <div class="hero-right-content">Learn about my priorities, experience, projects, and more below.</div>
+  </div>
+</div>
+<!---About--->
+<div id="about" class="section-header">About</div>
+<div class="hero-about">
+  <div class="hero-left">
+    <img class="photo priorities" src="resources/images/priorities.png">
+  </div>
+  <div class="hero-about-right">
+    <div class="hero-about-right-content-first">I serve as a product manager at Capital Group, where my focus is providing investment insights through an ESG data platform. 
+      In addition to managing this platform, my teams have also built software for analyzing investment decisions, global oil supply, and financial cycles.</div>
+    <div class="hero-about-right-content"><blockquote>As a product manager, my priorities are the mission, users, and engineers. 
+      Each of these guide my philosophy on product management and serve as a rudder to steer my actions.</blockquote></div>
+    <div class="hero-about-right-content">Before becoming a product manager, I worked alongside Capital Group’s team of investors as a Research Associate in pursuit of investment opportunities. 
+      My focus was researching small cap (<$6bn) companies and bringing technology to the investment process.</div>
+    <div class="hero-about-right-content">Before joining Capital Group, I graduated from Harvey Mudd College with a B.S. in Engineering. 
+      While attending, I partnered with Amazon and Northrop Grumman on research projects and interned with Starburst Aerospace, The Search Agency, Listen Logic and Thuzi.</div>
+    <div class="hero-about-right-content">Outside of work you can find me cooking, reading, or going for long runs.</div>
+  </div>
+</div>
+<!---Projects--->
+<div id="projects" class="section-header">Projects</div>
+<div class="hero-projects">
+  <div class="slider-container">
+  <div class="slider">
+    <div class="slides">
+      <input type="radio" name="radio-btn" id="radio1" checked="checked">
+      <input type="radio" name="radio-btn" id="radio2">
+      <input type="radio" name="radio-btn" id="radio3">
+      <input type="radio" name="radio-btn" id="radio4">
+      <div class="slide first">
+        <!---ESG Data Platform--->
+        <div class="container">
+          <div class="slide-content">
+            <div class="hero-right-title"><b>ESG Data Platform</b></div>
+            <div class="hero-right-content">As a product manager at Capital Group, I developed a platform used to connect ESG data to the investment research process. 
+              The platform allowed users to monitor risks, research issues, and engage with company management.</div>
+              <div class="hero-right-content"><b>Skills:</b> AWS, HTML, Python, and SQL</div>
+              <div class="hero-right-content"><b>Partner:</b> Capital Group</div>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <!---Investment Journal--->
+        <div class="container">
+          <div class="slide-content">
+            <div class="hero-right-title"><b>Investment Journal</b></div>
+            <div class="hero-right-content">As a product manager at Capital Group, I developed a platform used to analyze investor decision making. 
+              The platform allowed user to record details regarding their decisions and combat hindsight bias when revisiting their investment process.</div>
+            <div class="hero-right-content"><b>Skills:</b> HTML, R, and Tableau</div>
+            <div class="hero-right-content"><b>Partner:</b> Capital Group</div>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <!---Configurable Microphone Array--->
+        <div class="container">
+          <div class="slide-content">
+            <div class="hero-right-title"><b>Configurable Microphone Array</b></div>
+            <div class="hero-right-content">As part of a research team at Harvey Mudd, I designed a configurable microphone-speaker system used to expedite the testing process for Amazon Echo prototypes. 
+              The system allowed users to test varying microphone-speaker configurations and measure their effects on a beamforming algorithm.</div>
+            <div class="hero-right-content"><b>Skills:</b> Circuit Design, CAD Modeling, and C++</div>
+            <div class="hero-right-content"><b>Partners:</b> Amazon Lab126 and Harvey Mudd</div>
+          </div>
+        </div>
+      </div>   
+      <div class="slide">
+        <!---Automotive Radar--->
+        <div class="container">
+          <div class="slide-content">
+            <div class="hero-right-title"><b>Automotive Radar</b></div>
+            <div class="hero-right-content">As part of a research team at Harvey Mudd, I designed a hardware system used to validate a software simulation of automotive radar systems. 
+              The software allowed users to test the effects of mutual interference in controlled scenarios with multiple radar systems.</div>
+            <div class="hero-right-content"><b>Skills:</b> Circuit Design, Radar Design, and MATLAB</div>
+            <div class="hero-right-content"><b>Partners:</b> Northrop Grumman and Harvey Mudd</div>
+          </div>
+        </div>
+      </div>
+      <div class="navigation-auto">
+        <div class="auto-btn1"></div>
+        <div class="auto-btn2"></div>
+        <div class="auto-btn3"></div>
+        <div class="auto-btn4"></div>
+      </div>
+      <div class="navigation-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+      </div>
     </div>
-  </header>
+    </div>
+  </div>
+  <div class="projects-right">
+    <span style="font-size: 2rem; font-weight: 900;">Select Experience</span>
+    <div>Find out more about the projects, skills, and partners that I have invested my time in.</div>
+  </div>
+</div>
+<!---Links--->
+<div id="links" class="section-header">Links</div>
+<div class="hero-links">
+  <div class="hero-links-title">Want to learn more?</div>
+  <div class="hero-links-content">Check out my <a style="color: #4039a8;" href="https://www.linkedin.com/in/pslaats/">LinkedIn</a> or debug my code on <a style="color: #4039a8;" href="https://github.com/pawslaats">GitHub</a>.</div>
+  <div class="hero-links-content">Reading List: <a style="color: #4039a8;" href="https://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/150112174X/">Sprint</a> by Jake Knapp, <a style="color: #4039a8;" href="https://www.amazon.com/Quick-Fix-Psychology-Cant-Social/dp/0374239800/">The Quick Fix</a> by Jesse Signal, and <a style="color: #4039a8;" href="https://www.amazon.com/Progress-Poverty-Henry-George/dp/1420968882/">Poverty and Progress</a> by Henry George.</div>
+  <div class="hero-links-content">Playlist: <a style="color: #4039a8;" href="https://open.spotify.com/artist/2hPgGN4uhvXAxiXQBIXOmE">Kids See Ghosts</a> and <a style="color: #4039a8;" href="https://open.spotify.com/artist/6O4EGCCb6DoIiR6B1QCQgp">Toro y Moi</a>.</div>
+</div>
+<!---Contact--->
+<div id="contact" class="section-header">Contact</div>
+<div class="hero-contact">
+  <div class="hero-contact-title">Want to say hello?</div>
+  <div class="hero-contact-content">You can reach me directly at <a style="color: #4039a8;" href="mailto: paul@slaats.dev">paul@slaats.dev</a>.</div>
+</div>
+<!---JS Counter--->
+<script type="text/javascript">
+  var counter = 1;
+  setInterval(function(){
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if(counter > 4){
+      counter = 1;
+    }
+  }, 25000);
+  </script>
 </body>
-</html>

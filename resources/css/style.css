@@ -1,0 +1,397 @@
+/* Universal Styles */
+
+html {
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  color: #050c26;
+}
+
+/* Formatting: Header */
+
+header {
+  position: fixed;
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: auto;
+  z-index: 100;
+  height: 6rem;
+  display: flex;
+  background-color: #fff;
+  font-size: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 5%);
+}
+
+header .content {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+}
+
+header .logo{
+  flex: 1;
+  font-size: 2rem;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav li {
+  padding-left: 1.5rem;
+  font-size: 1.25rem;
+}
+
+/* Formatting: Header Links */
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: bold;
+  border-bottom: 2px solid;
+  transition: 0.05s;
+  color: #4039a8;
+}
+
+/* Formatting: Blockquote */
+
+blockquote {
+  border-left: 0.5rem solid #e4e7fd;
+  padding-left: 1rem;
+  font-style: italic;
+  margin-left: 0rem;
+}
+
+/* Formatting: Body */
+
+.body {
+  color: #e4e7fd;
+  font-weight: bold;
+  border-bottom: 2px solid;
+}
+
+/* Formatting: Images */
+
+.photo {
+  border-radius: 1rem;
+  height: auto;
+  width: 20rem;
+  align-items: center;
+}
+
+/* Hero: Intro */
+
+.hero-main {
+  margin-top: 8rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  height: auto;
+  min-height: 20rem;
+  background-color: #e4e7fd;
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid #050c26;
+}
+
+.hero-left  {
+  position: relative;
+  z-index: 2;
+  float: left;
+  flex: 0 auto;
+  border-radius: 16rem;
+  padding-right: 2rem;
+}
+
+.hero-right {
+  position: relative;
+  z-index: 2;
+  width: auto;
+  flex: 0 auto;
+  margin-left: 22rem;
+}
+
+.hero-right-title {
+  font-size: 1.75rem;
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+}
+
+.hero-right-content {
+  font-size: 1.25rem;
+  margin-block-start: 1rem;
+  margin-block-end: 0rem;
+}
+
+/* Section Header */
+
+.section-header {
+  margin: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  scroll-margin-top: 8rem;
+}
+
+/* Hero: About */
+
+.hero-about {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  height: auto;
+  min-height: 20rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid #050c26;
+}
+
+.hero-about-right {
+  position: relative;
+  z-index: 2;
+  width: auto;
+  flex: 0 auto;
+  margin-left: 22rem;
+}
+
+.hero-about-right-content-first {
+  font-size: 1.25rem;
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+}
+
+.hero-about-right-content {
+  font-size: 1.25rem;
+  margin-block-start: 1rem;
+  margin-block-end: 0rem;
+}
+
+/* Hero: Projects */
+
+.hero-projects {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  height: 30rem;
+  background-color: #050c26;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+.slider-container {
+  position: relative;
+  z-index: 2;
+}
+
+.slider {
+  width: 67%;
+  height: 26rem;
+  border-radius: 10px;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.slides {
+  width: 500%;
+  height: 26rem;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide {
+  width: 20%;
+  transition: 2s;
+}
+
+.container {
+  width: 100%;
+  height: 26rem;
+  background-color: white;
+}
+
+.navigation-manual {
+  width: 67%;
+  position: absolute;
+  margin-top: 28.5rem;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+}
+
+.manual-btn {
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child) {margin-right: 3rem;}
+.manual-btn:hover{background: white;}
+#radio1:checked ~ .first{margin-left: 0;}
+#radio2:checked ~ .first{margin-left: -20%;}
+#radio3:checked ~ .first{margin-left: -40%;}
+#radio4:checked ~ .first{margin-left: -60%;}
+
+.navigation-auto {
+  position: absolute;
+  display: flex;
+  width: 67%;
+  justify-content: center;
+  margin-top: 28.5rem;
+}
+
+.navigation-auto div{
+  border: 2px solid white;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child) {margin-right: 3rem;}
+#radio1:checked ~ .navigation-auto .auto-btn1{background: white;}
+#radio2:checked ~ .navigation-auto .auto-btn2{background: white;}
+#radio3:checked ~ .navigation-auto .auto-btn3{background: white;}
+#radio4:checked ~ .navigation-auto .auto-btn4{background: white;}
+
+.slide-content  {
+  position: relative;
+  z-index: 2;
+  float: left;
+  flex: 0 auto;
+  padding: 1rem;
+}
+
+.projects-right {
+  margin-left: 70%;
+  margin-top: -16rem;
+  color: white;
+}
+
+/* Hero: Links */
+
+.hero-links {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  height: auto;
+  min-height: 10rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid #050c26;
+}
+
+.hero-links-title {
+  font-size: 1.75rem;
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+}
+
+.hero-links-content {
+  font-size: 1.25rem;
+  margin-block-start: 1rem;
+  margin-block-end: 0rem;
+}
+
+/* Hero: Contact */
+
+.hero-contact {
+  margin: 2rem;
+  height: auto;
+  background-color: #e4e7fd;
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid #050c26;
+}
+
+.hero-contact-title {
+  font-size: 1.75rem;
+  margin-block-start: 0rem;
+  margin-block-end: 0rem;
+}
+
+.hero-contact-content {
+  font-size: 1.25rem;
+  margin-block-start: 1rem;
+  margin-block-end: 0rem;
+}
+
+/* Device Sizing Changes */
+
+@media(max-width:1460px){
+	blockquote {
+    margin-left: 22rem;
+	}
+  .hero-about-right {
+    margin-left: 0rem;
+  }
+}
+
+@media(max-width:1073px){
+  .projects-right {
+    display: none;
+  }
+  .slider {
+    width: 100%;
+  }
+  .navigation-manual {
+    width: 100%;
+  }
+  .navigation-auto {
+    width: 100%;
+  }
+}
+
+/* Large Tablet Styles */
+
+@media(max-width:991px){
+  .hero-about-right {
+    margin-left: 0rem;
+  }
+	.priorities {
+    display: none;
+	}
+  blockquote {
+    margin-left: 0rem;
+	}
+}
+
+@media(max-width:900px){
+	.main {
+    display: none;
+	}
+  .hero-right {
+    margin-left: 0rem;
+  }
+  .hero-about-right {
+    margin-left: 0rem;
+  }
+}
+
+/* Medium Tablet Styles */
+
+@media(max-width:767px){
+  header nav ul {
+    display: none;
+  }
+}
+
+@media(max-width:679px){
+  html {
+    font-size: 12px;
+  }
+}
+
+/* Phone Styles */
+
+@media(max-width:479px){
+}

@@ -1,2 +1,2 @@
-# pawslaats.github.io
+# slaats.dev
 Personal Website for Paul Slaats

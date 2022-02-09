@@ -393,5 +393,44 @@ blockquote {
 
 /* Phone Styles */
 
-@media(max-width:479px){
+@media(max-device-width:479px){
+  html {
+    font-size: 16px;
+  }
+  .photo {
+    display: none;
+  }
+  .hero-right {
+    margin-left: 0rem;
+  }
+  .hero-about-right {
+    margin-left: 0rem;
+  }
+  .projects-header {
+    display: none;
+  }
+  .about-header {
+    display: none;
+  }
+  .hero-projects {
+    display: none;
+  }
+  .hero-about {
+    display: none;
+  }
+  header nav ul {
+    display: none;
+  }
+  .hero-main {
+    margin-top: 12rem;
+  }
+  header {
+    height: 10rem;
+  }
+  header .logo {
+    font-size: 4rem;
+  }
+  .content-two {
+    display: none;
+  }
 }

@@ -177,7 +177,7 @@ blockquote {
   margin-top: 2rem;
   margin-left: 2rem;
   margin-right: 2rem;
-  height: 30rem;
+  height: 35rem;
   background-color: #050c26;
   border-radius: 1rem;
   padding: 2rem;
@@ -190,7 +190,7 @@ blockquote {
 
 .slider {
   width: 67%;
-  height: 26rem;
+  height: 31rem;
   border-radius: 10px;
   overflow: hidden;
   justify-content: center;
@@ -198,7 +198,7 @@ blockquote {
 
 .slides {
   width: 500%;
-  height: 26rem;
+  height: 31rem;
   display: flex;
 }
 
@@ -213,14 +213,14 @@ blockquote {
 
 .container {
   width: 100%;
-  height: 26rem;
+  height: 31rem;
   background-color: white;
 }
 
 .navigation-manual {
   width: 67%;
   position: absolute;
-  margin-top: 28.5rem;
+  margin-top: 33.5rem;
   display: flex;
   justify-content: center;
   z-index: 3;
@@ -246,7 +246,7 @@ blockquote {
   display: flex;
   width: 67%;
   justify-content: center;
-  margin-top: 28.5rem;
+  margin-top: 33.5rem;
 }
 
 .navigation-auto div{
@@ -272,7 +272,7 @@ blockquote {
 
 .projects-right {
   margin-left: 70%;
-  margin-top: -16rem;
+  margin-top: -18.5rem;
   color: white;
 }
 
@@ -377,6 +377,18 @@ blockquote {
   }
 }
 
+@media(max-device-width:900px){
+	.main {
+    display: none;
+	}
+  .hero-right {
+    margin-left: 0rem;
+  }
+  .hero-about-right {
+    margin-left: 0rem;
+  }
+}
+
 /* Medium Tablet Styles */
 
 @media(max-width:767px){
@@ -385,9 +397,12 @@ blockquote {
   }
 }
 
-@media(max-width:679px){
-  html {
-    font-size: 12px;
+@media(max-width:620px){
+  .skills {
+    display: none;
+  }
+  .partners {
+    display: none;
   }
 }
 

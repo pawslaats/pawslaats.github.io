@@ -2,25 +2,34 @@
 <html lang="en">
 <head>
   <title>Paul Slaats</title>
-  <link rel="stylesheet" href="resources/css/style.css">
+  <link rel="stylesheet" href="resources/css/style_dev.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
   <link rel="shortcut icon" type="image/x-icon" href="resources/images/wave.png">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/>
 </head>
 <body>
 <!---Navigation--->
 <header>
-  <div class="content">
-  <div class="logo"><span style="color:#050c26">Slaats</span> : <span style="color:#4039a8">Dev</span></div>
+  <div id="about" class="content">
+  <div class="logo"><span style="color:#050c26">Slaats</span>:<span style="color:#4039a8">Dev</span></div>
   <nav>
     <ul>
-      <li><a href="#about">About</a></li>
+      <li><a href="#">About</a></li>
       <li><a href="#projects">Projects</a></li>
-      <li><a href="#links">Links</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
   </div>
+  <div class="iconified">
+    <ul>
+      <li><a href="mailto: paul@slaats.dev"><span class="iconify-inline" data-icon="akar-icons:envelope" data-width="24" data-height="24"></span></a></li>
+      <li style="padding-left: 1.5rem;"><a href="https://www.linkedin.com/in/pslaats/" target="_blank"><span class="iconify-inline" data-icon="akar-icons:linkedin-box-fill" data-width="24" data-height="24"></span></a></li>
+      <li style="padding-left: 1.5rem; padding-right: 1rem;"><a href="https://github.com/pawslaats"><span class="iconify-inline" data-icon="akar-icons:github-fill" data-width="24" data-height="24"></span></a></li>
+    </ul>
+  </div>
 </header>
+
 <!---Hero--->
 <div class="hero-main">
   <div class="hero-left">
@@ -30,20 +39,8 @@
     <div class="hero-right-title">👋 Hello There!</div>
     <div class="hero-right-content">My name is Paul Slaats, and I am a developer, product manager, and lifelong learner.  
       My north star is creating value for people who invest their time, skills, and resources to improve their life and the lives of others.</div>
-    <div class="hero-right-content content-two">Learn about my priorities, experience, projects, and more below.</div>
-  </div>
-</div>
-<!---About--->
-<div id="about" class="section-header about-header">About</div>
-<div class="hero-about">
-  <div class="hero-left">
-    <img class="photo priorities" src="resources/images/priorities.png">
-  </div>
-  <div class="hero-about-right">
-    <div class="hero-about-right-content-first">I serve as a product manager at Capital Group, where my focus is providing investment insights through an ESG data platform. 
+    <div class="hero-about-right-content">I serve as a product manager at Capital Group, where my focus is providing investment insights through an ESG data platform. 
       In addition to managing this platform, my teams have also built software for analyzing investment decisions, global oil supply, and financial cycles.</div>
-    <div class="hero-about-right-content"><blockquote>As a product manager, my priorities are the mission, users, and engineers. 
-      Each of these guide my philosophy on product management and serve as a rudder to steer my actions.</blockquote></div>
     <div class="hero-about-right-content">Before becoming a product manager, I worked alongside Capital Group’s team of investors as a Research Associate in pursuit of investment opportunities. 
       My focus was researching small cap (<$6bn) companies and bringing technology to the investment process.</div>
     <div class="hero-about-right-content">Before joining Capital Group, I graduated from Harvey Mudd College with a B.S. in Engineering. 
@@ -51,107 +48,89 @@
     <div class="hero-about-right-content">Outside of work you can find me cooking, reading, or going for long runs.</div>
   </div>
 </div>
+
 <!---Projects--->
 <div id="projects" class="section-header projects-header">Projects</div>
 <div class="hero-projects">
-  <div class="slider-container">
-  <div class="slider">
-    <div class="slides">
-      <input type="radio" name="radio-btn" id="radio1" checked="checked">
-      <input type="radio" name="radio-btn" id="radio2">
-      <input type="radio" name="radio-btn" id="radio3">
-      <input type="radio" name="radio-btn" id="radio4">
-      <div class="slide first">
-        <!---ESG Data Platform--->
-        <div class="container">
-          <div class="slide-content">
-            <div class="hero-right-title"><b>ESG Data Platform</b></div>
-            <div class="hero-right-content">As a product manager at Capital Group, I developed a platform used to connect ESG data to the investment research process. 
-              The platform allowed users to monitor risks, research issues, and engage with company management.</div>
-              <div class="hero-right-content skills"><b>Skills:</b> AWS, HTML, Python, and SQL</div>
-              <div class="hero-right-content partners"><b>Partner:</b> Capital Group</div>
-          </div>
-        </div>
-      </div>
-      <div class="slide">
-        <!---Investment Journal--->
-        <div class="container">
-          <div class="slide-content">
-            <div class="hero-right-title"><b>Investment Journal</b></div>
-            <div class="hero-right-content">As a product manager at Capital Group, I developed a platform used to analyze investor decision making. 
-              The platform allowed user to record details regarding their decisions and combat hindsight bias when revisiting their investment process.</div>
-            <div class="hero-right-content skills"><b>Skills:</b> HTML, R, and Tableau</div>
-            <div class="hero-right-content partners"><b>Partner:</b> Capital Group</div>
-          </div>
-        </div>
-      </div>
-      <div class="slide">
-        <!---Configurable Microphone Array--->
-        <div class="container">
-          <div class="slide-content">
-            <div class="hero-right-title"><b>Configurable Microphone Array</b></div>
-            <div class="hero-right-content">As part of a research team at Harvey Mudd, I designed a configurable microphone-speaker system used to expedite the testing process for Amazon Echo prototypes. 
-              The system allowed users to test varying microphone-speaker configurations and measure their effects on a beamforming algorithm.</div>
-            <div class="hero-right-content skills"><b>Skills:</b> Circuit Design, CAD Modeling, and C++</div>
-            <div class="hero-right-content partners"><b>Partners:</b> Amazon Lab126 and Harvey Mudd</div>
-          </div>
-        </div>
-      </div>   
-      <div class="slide">
-        <!---Automotive Radar--->
-        <div class="container">
-          <div class="slide-content">
-            <div class="hero-right-title"><b>Automotive Radar</b></div>
-            <div class="hero-right-content">As part of a research team at Harvey Mudd, I designed a hardware system used to validate a software simulation of automotive radar systems. 
-              The software allowed users to test the effects of mutual interference in controlled scenarios with multiple radar systems.</div>
-            <div class="hero-right-content skills"><b>Skills:</b> Circuit Design, Radar Design, and MATLAB</div>
-            <div class="hero-right-content partners"><b>Partners:</b> Northrop Grumman and Harvey Mudd</div>
-          </div>
-        </div>
-      </div>
-      <div class="navigation-auto">
-        <div class="auto-btn1"></div>
-        <div class="auto-btn2"></div>
-        <div class="auto-btn3"></div>
-        <div class="auto-btn4"></div>
-      </div>
-      <div class="navigation-manual">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
-        <label for="radio4" class="manual-btn"></label>
-      </div>
+<div class="slideyy">
+  <div class="slidey">
+  <div class="slide-content">
+    <div class="hero-right-title"><b>ESG Data Platform</b></div>
+    <div class="hero-right-content">As a product manager at Capital Group, I developed a platform used to connect ESG data to the investment research process. The platform allowed users to monitor risks, research issues, and engage with company management.</div>
+    <div class="hero-right-content skills"><b>Skills:</b> AWS, Python, and SQL</div>
+    <div class="hero-right-content partners"><b>Partner:</b> Capital Group</div>
+  </div>
+  <div class="bottons" style="margin:1rem">
+    <a href="https://www.capitalgroup.com/individual/about-us/esg/esg-home.html"><button class="media">Learn more</button></a>
+  </div>
+  </div>
+  <div class="slidey">
+  <div class="slide-content">
+    <div class="hero-right-title"><b>Investment Journal</b></div>
+    <div class="hero-right-content">As a product manager at Capital Group, I developed a platform used to analyze investor decision making. The platform allowed users to record details regarding their decisions and combat hindsight bias when revisiting their investment process.</div>
+    <div class="hero-right-content skills"><b>Skills:</b> Python, R, and Tableau</div>
+    <div class="hero-right-content partners"><b>Partner:</b> Capital Group</div>
+  </div>
+  </div>
+  <div class="slidey">
+  <div class="slide-content">
+    <div class="hero-right-title"><b>Configurable Microphone Array</b></div>
+    <div class="hero-right-content">As part of a research team at Harvey Mudd, I designed a configurable microphone-speaker system used to expedite the testing process for Amazon Echo prototypes. The system allowed users to test varying microphone-speaker configurations and measure their effects on a beamforming algorithm.</div>
+    <div class="hero-right-content skills"><b>Skills:</b> Analog Circuit Design, CAD, and C++</div>
+    <div class="hero-right-content partners"><b>Partners:</b> Amazon Lab126</div>
+  </div>
+  <div class="bottons" style="margin:1rem">
+    <a href="https://www.capitalgroup.com/individual/about-us/esg/esg-home.html"><button class="media">Learn more</button></a>
+  </div>
+  </div>
+  <div class="slidey">
+  <div class="slide-content">
+    <div class="hero-right-title"><b>Automotive Radar</b></div>
+    <div class="hero-right-content">As part of a research team at Harvey Mudd, I designed a hardware system used to validate a software simulation of automotive radar systems. The software allowed users to test the effects of mutual interference in controlled scenarios with multiple radar systems.</div>
+    <div class="hero-right-content skills"><b>Skills:</b> Analog Circuit Design and MATLAB</div>
+    <div class="hero-right-content partners"><b>Partners:</b> Northrop Grumman</div>
+  </div>
+  <div class="bottons" style="margin:1rem">
+    <button class="media" onclick="href='https://www.hmc.edu/clinic/2017/configurable-microphone-harness-array/'">Learn more</button>
+  </div>
+  </div>
+  <div class="slidey">
+    <div class="slide-content">
+      <div class="hero-right-title"><b>Microprocessor Design</b></div>
+      <div class="hero-right-content">As part of a research team at Harvey Mudd, I designed a hardware system used to validate a software simulation of automotive radar systems. The software allowed users to test the effects of mutual interference in controlled scenarios with multiple radar systems.</div>
+      <div class="hero-right-content skills"><b>Skills:</b> Analog Circuit Design and MATLAB</div>
+    </div>
+    <div class="bottons" style="margin:1rem">
+      <a href="https://www.capitalgroup.com/individual/about-us/esg/esg-home.html" class="media"><button class="media">GitHub</button></a>
     </div>
     </div>
-  </div>
-  <div class="projects-right">
-    <span style="font-size: 2rem; font-weight: bolder;">Select Experience</span>
-    <div>Find out more about the projects, skills, and partners that I have invested my time in.</div>
-  </div>
 </div>
-<!---Links--->
-<div id="links" class="section-header">Links</div>
-<div class="hero-links">
-  <div class="hero-links-title">Want to learn more?</div>
-  <div class="hero-links-content">Check out my <a style="color: #4039a8;" href="https://www.linkedin.com/in/pslaats/">LinkedIn</a> or debug my code on <a style="color: #4039a8;" href="https://github.com/pawslaats">GitHub</a>.</div>
-  <div class="hero-links-content">Reading List: <a style="color: #4039a8;" href="https://www.amazon.com/Sprint-Solve-Problems-Test-Ideas/dp/150112174X/">Sprint</a> by Jake Knapp, <a style="color: #4039a8;" href="https://www.amazon.com/Quick-Fix-Psychology-Cant-Social/dp/0374239800/">The Quick Fix</a> by Jesse Signal, and <a style="color: #4039a8;" href="https://www.amazon.com/Progress-Poverty-Henry-George/dp/1420968882/">Poverty and Progress</a> by Henry George.</div>
-  <div class="hero-links-content">Playlist: <a style="color: #4039a8;" href="https://open.spotify.com/artist/2hPgGN4uhvXAxiXQBIXOmE">Kids See Ghosts</a> and <a style="color: #4039a8;" href="https://open.spotify.com/artist/6O4EGCCb6DoIiR6B1QCQgp">Toro y Moi</a>.</div>
 </div>
+
 <!---Contact--->
 <div id="contact" class="section-header">Contact</div>
 <div class="hero-contact">
-  <div class="hero-contact-title">Want to say hello?</div>
-  <div class="hero-contact-content">You can reach me directly at <a style="color: #4039a8;" href="mailto: paul@slaats.dev">paul@slaats.dev</a>.</div>
+  <div class="hero-contact-title">Want to get in touch?</div>
+  <div class="hero-contact-content">Check out my <a style="color: #4039a8;" href="https://www.linkedin.com/in/pslaats/">LinkedIn</a>, debug my code on <a style="color: #4039a8;" href="https://github.com/pawslaats">GitHub</a>, or e-mail me at <a style="color: #4039a8;" href="mailto: paul@slaats.dev">paul@slaats.dev</a>.</div>
 </div>
-<!---JS Counter--->
+
+<!---Slick-->
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 <script type="text/javascript">
-  var counter = 1;
-  setInterval(function(){
-    document.getElementById('radio' + counter).checked = true;
-    counter++;
-    if(counter > 4){
-      counter = 1;
-    }
-  }, 25000);
-  </script>
+      $('.slideyy').slick({
+        infinite: true,
+        slidesToShow: 1,
+        variableWidth: true
+      });
+</script>
+
+<!---Icons-->
+<script src="https://code.iconify.design/2/2.1.2/iconify.min.js"></script>
+
+<!---Ending-->
 </body>
+</html>

@@ -334,7 +334,10 @@ button[class^="media"]:hover {
   .desktop {
     display: none;
   }
-  html {
-    font-size: 20px;
+  .hero-right-title {
+    font-size: 2.25rem;
+  }
+  .hero-right-content {
+    font-size: 1.75rem;
   }
 }

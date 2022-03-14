@@ -1,5 +1,4 @@
 /* Universal Styles */
-
 html {
   font-family: Poppins, sans-serif;
   font-size: 16px;
@@ -7,7 +6,6 @@ html {
 }
 
 /* Formatting: Header */
-
 header {
   position: fixed;
   left: 0%;
@@ -21,7 +19,7 @@ header {
   font-size: 1.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 5%);
+  box-shadow: 0rem 0.25rem 0.25rem rgb(0 0 0 / 5%);
 }
 
 header .content {
@@ -50,37 +48,61 @@ header nav .icons {
   padding-left: auto;
 }
 
-/* Formatting: Header Links */
-
+/* Formatting: Anchor Tags */
 a {
   color: black;
   text-decoration: none;
 }
 
 a:hover {
-  border-bottom: 2px solid;
+  border-bottom: 0.125rem solid;
   transition: 0.05s;
   color: #4039a8;
 }
 
-/* Formatting: Blockquote */
+/* Formatting: Buttons */
+button {
+  padding: 1rem;
+  width: 40%;
+  background-color: white;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+  border: 0.125rem solid #050c26;
+}
 
-blockquote {
-  border-left: 0.5rem solid #e4e7fd;
-  padding-left: 1rem;
-  font-style: italic;
-  margin-left: 0rem;
+button[class^="media"]:hover {
+  padding: 1rem;
+  width: 40%;
+  background-color: #4039a8 !important;
+  color: white !important;
+  font-size: 1.25rem;
+  border-radius: 0.5rem;
+  border: 0.125rem solid #4039a8;
+  transition: 0.2s;
+}
+
+.buttons {
+  text-align: center;
+}
+
+/* Formatting: Icons */
+.icon {
+  justify-content: flex-end;
+}
+
+.iconified {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
 }
 
 /* Formatting: Body */
-
 .body {
   color: #e4e7fd;
-  border-bottom: 2px solid;
+  border-bottom: 0.125rem solid;
 }
 
 /* Formatting: Images */
-
 .photo {
   border-radius: 1rem;
   height: auto;
@@ -89,7 +111,6 @@ blockquote {
 }
 
 /* Hero: Intro */
-
 .hero-main {
   margin-top: 8rem;
   margin-left: 2rem;
@@ -99,7 +120,7 @@ blockquote {
   background-color: #e4e7fd;
   border-radius: 1rem;
   padding: 2rem;
-  border: 2px solid #050c26;
+  border: 0.125rem solid #050c26;
 }
 
 .hero-left  {
@@ -131,49 +152,13 @@ blockquote {
 }
 
 /* Section Header */
-
 .section-header {
   margin: 2rem;
   font-size: 2rem;
   scroll-margin-top: 8rem;
 }
 
-/* Hero: About */
-
-.hero-about {
-  margin-top: 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  height: auto;
-  min-height: 20rem;
-  background-color: white;
-  border-radius: 1rem;
-  padding: 2rem;
-  border: 1px solid #050c26;
-}
-
-.hero-about-right {
-  position: relative;
-  z-index: 2;
-  width: auto;
-  flex: 0 auto;
-  margin-left: 22rem;
-}
-
-.hero-about-right-content-first {
-  font-size: 1.25rem;
-  margin-block-start: 0rem;
-  margin-block-end: 0rem;
-}
-
-.hero-about-right-content {
-  font-size: 1.25rem;
-  margin-block-start: 1rem;
-  margin-block-end: 0rem;
-}
-
 /* Hero: Projects */
-
 .hero-projects {
   margin-top: 2rem;
   margin-left: 2rem;
@@ -184,207 +169,73 @@ blockquote {
   padding: 4rem;
 }
 
-.slider-container {
-  position: relative;
-  z-index: 2;
-}
-
-.slider {
-  width: 67%;
-  height: 31rem;
-  border-radius: 10px;
-  overflow: hidden;
-  justify-content: center;
-}
-
-.slides {
-  width: 500%;
-  height: 31rem;
-  display: flex;
-}
-
-.slides input{
-  display: none;
-}
-
-.slide {
-  transition: 2s;
-}
-
-.container {
-  width: 100%;
-  height: 31rem;
-  background-color: white;
-}
-
-.navigation-manual {
-  width: 67%;
-  position: absolute;
-  margin-top: 33.5rem;
-  display: flex;
-  justify-content: center;
-  z-index: 3;
-}
-
-.manual-btn {
-  border: 2px solid white;
-  padding: 5px;
-  border-radius: 1rem;
-  cursor: pointer;
-  transition: 1s;
-}
-
-.manual-btn:not(:last-child) {margin-right: 3rem;}
-.manual-btn:hover{background: white;}
-#radio1:checked ~ .first{margin-left: 0;}
-#radio2:checked ~ .first{margin-left: -20%;}
-#radio3:checked ~ .first{margin-left: -40%;}
-#radio4:checked ~ .first{margin-left: -60%;}
-
-.navigation-auto {
-  position: absolute;
-  display: flex;
-  width: 67%;
-  justify-content: center;
-  margin-top: 33.5rem;
-}
-
-.navigation-auto div{
-  border: 2px solid white;
-  padding: 5px;
-  border-radius: 10px;
-  transition: 1s;
-}
-
-.navigation-auto div:not(:last-child) {margin-right: 3rem;}
-#radio1:checked ~ .navigation-auto .auto-btn1{background: white;}
-#radio2:checked ~ .navigation-auto .auto-btn2{background: white;}
-#radio3:checked ~ .navigation-auto .auto-btn3{background: white;}
-#radio4:checked ~ .navigation-auto .auto-btn4{background: white;}
-
 .slide-content  {
   position: relative;
   z-index: 2;
   float: left;
   flex: 0 auto;
   padding: 1rem;
-  height: 384px;
+  height: 24rem;
 }
-
-.projects-right {
-  margin-left: 70%;
-  margin-top: -18.5rem;
-  color: white;
-}
-
 
 .slidey {
   background-color: white;
-  width: 500px !important;
+  width: 32rem !important;
   margin-right: 2rem;
   padding: 1rem;
   border-radius: 1rem;
-  height: 500px;
-}
-
-button {
-  padding: 1rem;
-  width: 40%;
-  background-color: white;
-  font-size: 1.25rem;
-  border-radius: 0.5rem;
-  border: 2px solid #050c26;
-}
-
-.buttons {
-  text-align: center;
-}
-
-button[class^="media"]:hover {
-  padding: 1rem;
-  width: 40%;
-  background-color: #4039a8 !important;
-  color: white !important;
-  font-size: 1.25rem;
-  border-radius: 0.5rem;
-  border: 2px solid #4039a8;
-  transition: 0.2s;
+  height: 32rem;
 }
 
 .slick-prev {
-  left: -50px !important;
+  left: -3.125rem !important; 
+  height: 2.5rem !important;
+  width: 2.5rem !important;
 }
 
 .slick-next {
-  right: -30px !important; 
+  right: -3.125rem !important; 
+  height: 2.5rem !important;
+  width: 2.5rem !important;
+}
+
+.slick-arrow {
+  font-size: 2.5rem !important;
 }
 
 .slick-prev:before, .slick-next:before {
-  font-size: 40px !important;
+  font-size: 2.5rem !important;
 }
 
-.icon {
-  justify-content: flex-end;
+.mobile {
+  display:none;
 }
 
-.iconified {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
-}
-
-
-/* Hero: Links */
-
-.hero-links {
-  margin-top: 2rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+.hero-photo {
+  width: 100%;
   height: auto;
-  min-height: 10rem;
-  background-color: white;
   border-radius: 1rem;
+}
+
+.photo-frame {
+  margin: 2rem;
   padding: 2rem;
-  border: 2px solid #050c26;
-}
-
-.hero-links-title {
-  font-size: 1.75rem;
-  margin-block-start: 0rem;
-  margin-block-end: 0rem;
-}
-
-.hero-links-content {
-  font-size: 1.25rem;
-  margin-block-start: 1rem;
-  margin-block-end: 0rem;
+  border-radius: 1rem;
+  border: 0.125rem solid #050c26;
+  background-color: #050c26;
 }
 
 /* Hero: Contact */
-
 .hero-contact {
   margin: 2rem;
   height: auto;
   background-color: #e4e7fd;
   border-radius: 1rem;
   padding: 2rem;
-  border: 2px solid #050c26;
-}
-
-.hero-contact-title {
-  font-size: 1.75rem;
-  margin-block-start: 0rem;
-  margin-block-end: 0rem;
-}
-
-.hero-contact-content {
-  font-size: 1.25rem;
-  margin-block-start: 1rem;
-  margin-block-end: 0rem;
+  border: 0.125rem solid #050c26;
 }
 
 /* Device Sizing Changes */
-
 @media(max-width:1460px){
   .hero-about-right {
     margin-left: 0rem;
@@ -398,16 +249,9 @@ button[class^="media"]:hover {
   .slider {
     width: 100%;
   }
-  .navigation-manual {
-    width: 100%;
-  }
-  .navigation-auto {
-    width: 100%;
-  }
 }
 
 /* Large Tablet Styles */
-
 @media(max-width:991px){
   .hero-about-right {
     margin-left: 0rem;
@@ -418,7 +262,6 @@ button[class^="media"]:hover {
 }
 
 /* Medium Tablet Styles */
-
 @media(max-device-width:787px){
   .main {
     display: none;
@@ -431,6 +274,15 @@ button[class^="media"]:hover {
   }
   header nav ul {
     display: none;
+  }
+    .mbutton {
+    padding: 1rem;
+    width: 40%;
+    background-color: #4039a8 !important;
+    color: white !important;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+    border: 0.125rem solid #4039a8;
   }
 }
 
@@ -449,16 +301,9 @@ button[class^="media"]:hover {
   }
 }
 
-@media(max-width:660px){
-
-}
 
 /* Phone Styles */
-
 @media(max-device-width:479px){
-  html {
-    font-size: 16px;
-  }
   .photo {
     display: none;
   }
@@ -478,9 +323,15 @@ button[class^="media"]:hover {
     height: 10rem;
   }
   header .logo {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .content-two {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+  }
+  .desktop {
     display: none;
   }
 }

@@ -334,4 +334,7 @@ button[class^="media"]:hover {
   .desktop {
     display: none;
   }
+  html {
+    font-size: 20px;
+  }
 }

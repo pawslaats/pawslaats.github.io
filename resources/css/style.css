@@ -252,6 +252,18 @@ button[class^="media"]:hover {
 }
 
 /* Large Tablet Styles */
+@media(max-device-width:991px){
+  .mbutton {
+    padding: 1rem;
+    width: 40%;
+    background-color: #4039a8 !important;
+    color: white !important;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+    border: 0.125rem solid #4039a8;
+  }
+}
+
 @media(max-width:991px){
   .hero-about-right {
     margin-left: 0rem;
@@ -275,15 +287,6 @@ button[class^="media"]:hover {
   header nav ul {
     display: none;
   }
-    .mbutton {
-    padding: 1rem;
-    width: 40%;
-    background-color: #4039a8 !important;
-    color: white !important;
-    font-size: 1.25rem;
-    border-radius: 0.5rem;
-    border: 0.125rem solid #4039a8;
-  }
 }
 
 @media(max-width:787px){
@@ -300,7 +303,6 @@ button[class^="media"]:hover {
     display: none;
   }
 }
-
 
 /* Phone Styles */
 @media(max-device-width:479px){
